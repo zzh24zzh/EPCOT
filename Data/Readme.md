@@ -1,7 +1,9 @@
+# EPCOT data inputs
 ## Processing DNase-seq
 ### Dependencies
 * samtools (1.11)
 * deeptools (3.5.1)
+
 
 Since the only cell-type specific inputs of EPCOT are DNase-seq profiles, we use samtools and deeptools RPGC normalization to generate normalized bigWig files from bam files. The 'effectiveGenomeSize' in RPGC is calculated using [unique-kmers.py](https://github.com/dib-lab/khmer/blob/master/scripts/unique-kmers.py). 
 
