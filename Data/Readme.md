@@ -1,3 +1,4 @@
+## Processing DNase-seq
 ```
 #download bam files and blacklist
 wget -O GM12878_rep1.bam https://www.encodeproject.org/files/ENCFF020WZB/@@download/ENCFF020WZB.bam
