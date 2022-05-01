@@ -1,5 +1,6 @@
 ## Processing DNase-seq
-Since the only cell-type specific inputs of EPCOT are DNase-seq profiles, we use samtools and deeptools RPGC normalization to generate normalized bigWig files from bam files. The 'effectiveGenomeSize' in RPGC is calculated using [unique-kmers.py](https://github.com/dib-lab/khmer/blob/master/scripts/unique-kmers.py). An example of GM12878 with ENCODE accession number [ENCSR000EMT](https://www.encodeproject.org/experiments/ENCSR000EMT/)
+Since the only cell-type specific inputs of EPCOT are DNase-seq profiles, we use samtools and deeptools RPGC normalization to generate normalized bigWig files from bam files. The 'effectiveGenomeSize' in RPGC is calculated using [unique-kmers.py](https://github.com/dib-lab/khmer/blob/master/scripts/unique-kmers.py). 
+An example of GM12878 with ENCODE accession number [ENCSR000EMT](https://www.encodeproject.org/experiments/ENCSR000EMT/) is provided below.
 ```
 #download bam files and blacklist
 wget -O GM12878_rep1.bam https://www.encodeproject.org/files/ENCFF020WZB/@@download/ENCFF020WZB.bam
