@@ -1,4 +1,6 @@
 # EPCOT data inputs
+
+EPCOT takes inputs of one-hot representations of DNA sequences and DNase-seq profiles.
 ## Processing DNase-seq
 ### Dependencies
 * samtools (1.11)
