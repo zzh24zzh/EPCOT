@@ -16,7 +16,7 @@ EPCOT (jointly predicting <ins>EP</ins>igenome, <ins>C</ins>hromatin <ins>O</ins
 * scipy (1.7.3)
 * scikit-learn (1.0.2)
 
-You can use the following code to install the required packages
+You can use ```conda``` to install the required packages
 ```
 conda create -n epcot python=3.9
 conda activate epcot
