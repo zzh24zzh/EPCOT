@@ -5,7 +5,7 @@ import torch
 from torch import nn, einsum
 from einops import rearrange, reduce
 from einops.layers.torch import Rearrange
-
+import numpy as np
 
 
 SEQUENCE_LENGTH = 196_608
