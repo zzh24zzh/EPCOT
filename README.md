@@ -20,7 +20,7 @@ You can use ```conda``` to install the required packages
 ```
 conda create -n epcot python=3.9
 conda activate epcot
-pip install requirements.txt
+pip install -r requirements.txt
 ```
   
   
