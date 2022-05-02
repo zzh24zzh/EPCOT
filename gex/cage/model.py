@@ -5,7 +5,7 @@ from .transformer import Transformer
 from einops import rearrange
 from .layers import AttentionPool,Enformer,CNN
 from einops.layers.torch import Rearrange
-
+import os
 class GroupWiseLinear(nn.Module):
     def __init__(self, num_class, hidden_dim, bias=True):
         super().__init__()
@@ -110,7 +110,7 @@ def build_pre_train_model(args):
             transfomer=transformer,
             num_class=args.num_class,
         )
-    model_path='../../pretraining/pretrain_dnase.pt'
+    model_path=os.path.abspath('EPCOT/pretraining/pretrain_dnase.pt')
     pretrain_model.load_state_dict(torch.load(model_path, map_location='cpu'))
     if not args.fine_tune:
         for param in pretrain_model.parameters():
