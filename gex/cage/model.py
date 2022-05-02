@@ -110,7 +110,7 @@ def build_pre_train_model(args):
             transfomer=transformer,
             num_class=args.num_class,
         )
-    model_path='../../pre-training/pretrain_dnase.pt'
+    model_path='../../pretraining/pretrain_dnase.pt'
     pretrain_model.load_state_dict(torch.load(model_path, map_location='cpu'))
     if not args.fine_tune:
         for param in pretrain_model.parameters():
