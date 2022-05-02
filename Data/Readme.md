@@ -1,6 +1,6 @@
 # EPCOT data inputs
 
-EPCOT takes inputs of one-hot representations of DNA sequences and DNase-seq profiles. For DNA sequence, we use the reference genome hg38 whose fasta file is downloaded from [UCSC genome browser](http://hgdownload.cse.ucsc.edu/goldenPath/hg38/bigZips/), then the one-hot representations can be generated using [pyfaidx](https://github.com/mdshw5/pyfaidx) and [kipoiseq](https://github.com/kipoi/kipoiseq).
+EPCOT takes inputs of one-hot representations of DNA sequences and DNase-seq profiles. For DNA sequence, we use the reference genome hg38 whose fasta file is downloaded from [UCSC genome browser](http://hgdownload.cse.ucsc.edu/goldenPath/hg38/bigZips/).
 ## Processing DNase-seq
 ### Dependencies
 * samtools (1.11)
