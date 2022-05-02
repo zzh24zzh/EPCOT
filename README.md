@@ -12,7 +12,7 @@ EPCOT (jointly predicting <ins>EP</ins>igenome, <ins>C</ins>hromatin <ins>O</ins
 * einops (0.3.2)
 * kipoiseq (0.5.2)
 * numpy (1.19.5)
-* pytorch (1.10.1)
+* torch (1.10.1)
 * scipy (1.7.3)
 * scikit-learn (1.0.2)
 
