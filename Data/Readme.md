@@ -24,9 +24,7 @@ samtools index GM12878.bam
 #generalize normalized coverage track
 bamCoverage --bam GM12878.bam -o GM12878_dnase.bigWig --outFileFormat bigwig --normalizeUsing RPGC --effectiveGenomeSize 2559804523 
 --ignoreForNormalization chrX chrM --Offset 1 --binSize 1 --numberOfProcessors 24 --blackListFileName black_list.bed --skipNonCoveredRegions
-```
-Then you can use the following code to transfromer bigwig to numpy arrays.
 
-```
+# transform bigWig to numpy arrays saved as dictionary structure where the keys are chromosomes
 python dnase_processing GM12878_dnase.bigWig
 ```
