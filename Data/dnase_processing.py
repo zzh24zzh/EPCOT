@@ -17,7 +17,7 @@ def DNase_processing():
                 101991189, 90338345, 83257441, 80373285, 58617616, 64444167, 46709983, 50818468, 156040895]
     bw = pyBigWig.open(dnase_file)
     signals = {}
-    for chrom, len in bw.chroms().items():
+    for chrom, length in bw.chroms().items():
         try:
             if chrom == 'chrX':
                 chr = 'X'
@@ -25,7 +25,7 @@ def DNase_processing():
                 chr = int(chrom[3:])
         except Exception:
             continue
-        temp = np.zeros(len)
+        temp = np.zeros(length)
         intervals = bw.intervals(chrom)
         for interval in intervals:
             temp[interval[0]:interval[1]] = interval[2]
