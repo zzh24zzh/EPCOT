@@ -1,11 +1,9 @@
 import torch,math,os
 import numpy as np
 from torch import nn, Tensor,einsum
-from typing import Optional, List
-from transformer import Transformer
-import torch.nn.functional as F
+from .transformer import Transformer
 from einops import rearrange
-from layers import dilated_tower,AttentionPool,CNN
+from .layers import dilated_tower,AttentionPool,CNN
 from einops.layers.torch import Rearrange
 class GroupWiseLinear(nn.Module):
     def __init__(self, num_class, hidden_dim, bias=True):
