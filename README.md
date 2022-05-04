@@ -25,4 +25,4 @@ pip install -r requirements.txt
   
 
  ## Usage
-Please see [Data/](https://github.com/zzh24zzh/EPCOT/tree/master/Data) for how to generate the inputs of EPCOT.
+Please see [Data/](https://github.com/zzh24zzh/EPCOT/tree/master/Data) for how to generate the inputs to EPCOT.
