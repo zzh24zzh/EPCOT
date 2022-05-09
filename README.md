@@ -33,4 +33,4 @@ pip install gdown
 !gdown 1_YfpNSv-2ABQV2qSyBxem-y7aJFyRNzz --output models/pretrain_dnase.pt
 ```
 
-We also prepare a Google Colab Notebook to introduce how to use EPCOT
+We also prepare a Google Colab Notebook [EPCOT_usage.ipynb](https://github.com/zzh24zzh/EPCOT/blob/master/EPCOT_usage.ipynb) to introduce how to use EPCOT
