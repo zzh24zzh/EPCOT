@@ -16,5 +16,5 @@ pip install gdown
 !gdown 1EXm2AjqqO-UtLi2pprbDEb1gPXrxI3aW --output models/hic_GM12878_transformer.pt
 !gdown 1ofkpS526gXpnusGpRWVHgIFFFpTSW4Rm --output models/hic_IMR-90_transformer.pt
 
-#1kb-Micro-C
+#1kb-resolution Micro-C
 ```
