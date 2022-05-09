@@ -5,6 +5,8 @@
 In the downstream task of chromatin contact map prediction, the chromatin contact maps are downloaded from 4DN, which are OE-normalized using Juicebox. For example, we download 'GM12878.hic' file of GM12878 Hi-C contact map with 4DN accession number [4DNFI1UEG1HD](https://data.4dnucleome.org/files-processed/4DNFI1UEG1HD/), we use the following python code to obtain the OE-normalized contact maps. 
 ```
 import os,straw
+from scipy.sparse import csr_matrix,save_npz
+from util import txttomatrix
 os.system('mkdir GM12878_Hi-C')
 resolution=5000
 chrs = [str(i) for i in range(1, 23)] + ['X']
@@ -15,6 +17,17 @@ for chr in chrs:
     for i in range(len(result)):
         f.write("{0}\t{1}\t{2}\n".format(result[i].binX, result[i].binY, result[i].counts))
     f.close()
+    
+genome_lens = [248956422, 242193529, 198295559, 190214555, 181538259, 170805979, 159345973,
+                145138636, 138394717, 133797422, 135086622, 133275309, 114364328, 107043718,
+                101991189, 90338345, 83257441, 80373285, 58617616, 64444167, 46709983, 50818468, 156040895]
+genome_lens=np.array(genome_lens)//resolution
+for i in range(len(chrs)):
+    length=genome_lens[i]
+    txtfile='GM12878_Hi-C/chr%s_5kb.txt'%chrs[i]
+    row,col,data=txttomatrix(txtfile,resolution)
+    temp=csr_matrix((data, (row, col)), shape=(length, length))
+    save_npz('OE_matrix/%s/chr%s_5kb.npz'%(cl,chrs[i]),temp)
 ```
 
 ## Download trained models
