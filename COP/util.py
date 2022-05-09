@@ -65,6 +65,6 @@ def txttomatrix(txt_file,resolution):
 #
 #         input_data[chrs[i]]=np.stack(inputs)
 #         print(genome_lens[i],input_data[chrs[i]].shape)
-#     with open('/nfs/turbo/umms-drjieliu/usr/zzh/KGbert/chrom_organization/data/input_1Mb_test.pickle','wb') as f:
+#     with open('/nfs/turbo/umms-drjieliu/usr/zzh/KGbert/COP/data/input_1Mb_test.pickle','wb') as f:
 #         pickle.dump(input_data,f)
 
