@@ -8,7 +8,7 @@ mkdir GM12878_contact_map
 
 ```
 
-## Download trained models in Hi-C prediction of three cell lines
+## Download trained models
 ```
 pip install gdown
 !gdown 1ia-ZoSoiZGDFPnZcySzMpirovHhulRfH --output models/hic_HFF_transformer.pt
