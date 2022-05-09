@@ -24,7 +24,7 @@ genome_lens = [248956422, 242193529, 198295559, 190214555, 181538259, 170805979,
 genome_lens=np.array(genome_lens)//resolution
 for i in range(len(chrs)):
     length=genome_lens[i]
-    txtfile='GM12878_Hi-C/chr%s_5kb.txt'%chrs[i]
+    txtfile='GM12878_Hi-C/chr%s_%s.txt'%(chrs[i],resolution)
     row,col,data=txttomatrix(txtfile,resolution)
     temp=csr_matrix((data, (row, col)), shape=(length, length))
     save_npz('OE_matrix/%s/chr%s_5kb.npz'%(cl,chrs[i]),temp)
