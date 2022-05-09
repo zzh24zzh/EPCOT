@@ -26,3 +26,9 @@ pip install -r requirements.txt
 
  ## Usage
 Please see [Data/](https://github.com/zzh24zzh/EPCOT/tree/master/Data) for how to generate the inputs to EPCOT (one-hot repsentations of DNA sequences and DNase-seq).
+
+You can download our pre-training model from Google Drive, for the downstream models, you can go to each correspoding directories [gex/](https://github.com/zzh24zzh/EPCOT/tree/master/gex),[chrom_organization/](https://github.com/zzh24zzh/EPCOT/tree/master/chrom_organization).
+```
+pip install gdown
+!gdown 1_YfpNSv-2ABQV2qSyBxem-y7aJFyRNzz --output models/pretrain_dnase.pt
+```
