@@ -11,7 +11,10 @@ mkdir GM12878_contact_map
 ## Download trained models
 ```
 pip install gdown
+# 5kb-resolution Hi-C 
 !gdown 1ia-ZoSoiZGDFPnZcySzMpirovHhulRfH --output models/hic_HFF_transformer.pt
 !gdown 1EXm2AjqqO-UtLi2pprbDEb1gPXrxI3aW --output models/hic_GM12878_transformer.pt
 !gdown 1ofkpS526gXpnusGpRWVHgIFFFpTSW4Rm --output models/hic_IMR-90_transformer.pt
+
+#1kb-Micro-C
 ```
