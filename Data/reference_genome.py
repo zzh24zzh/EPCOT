@@ -27,7 +27,8 @@ def fatomatrix(fa_file):
 
 chroms=[str(i) for i in range(23)]+['X']
 for chr in chroms:
-    # fasta file
+    # change the path to fasta file
     fa_file = 'chr%s.fa' % chr
+    # change the saved location
     save_npz('chr%s.npz' % (chr), fatomatrix(fa_file))
 
