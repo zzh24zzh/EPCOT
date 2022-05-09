@@ -102,7 +102,7 @@ def build_transformer(args):
         num_encoder_layers=args.enc_layers,
         num_decoder_layers=args.dec_layers
     )
-def build_pre_train_model(args):
+def build_pretrain_model_cage(args):
     backbone = build_backbone(args)
     transformer = build_transformer(args)
     pretrain_model = Tranmodel(

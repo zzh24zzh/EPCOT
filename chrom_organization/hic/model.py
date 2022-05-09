@@ -152,7 +152,7 @@ def build_transformer(args):
         num_encoder_layers=args.enc_layers,
         num_decoder_layers=args.dec_layers
     )
-def build_pre_train_model(args):
+def build_pretrain_model_hic(args):
     backbone = build_backbone(args)
     transformer = build_transformer(args)
     pretrain_model = Tranmodel(
@@ -160,8 +160,8 @@ def build_pre_train_model(args):
             transfomer=transformer,
             num_class=args.num_class,
         )
-    model_path = os.path.abspath('EPCOT/pretraining/pretrain_dnase.pt')
-    pretrain_model.load_state_dict(torch.load(model_path, map_location='cpu'))
+    if args.pretrain_path != None:
+        pretrain_model.load_state_dict(torch.load(args.pretrain_path, map_location='cpu'))
     if not args.fine_tune:
         for param in pretrain_model.parameters():
             param.requires_grad = False
