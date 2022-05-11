@@ -25,6 +25,8 @@ pip install -r requirements.txt
   
 
  ## Usage
+ 
+### Model inputs 
 Please see [Data/](https://github.com/zzh24zzh/EPCOT/tree/master/Data) for how to generate the inputs to EPCOT (one-hot repsentations of DNA sequences and DNase-seq).
 
 You can download our pre-training model from Google Drive
