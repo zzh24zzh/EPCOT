@@ -29,6 +29,7 @@ pip install -r requirements.txt
 ### Model inputs 
 Please see [Data/](https://github.com/zzh24zzh/EPCOT/tree/master/Data) for how to generate the inputs to EPCOT (one-hot repsentations of DNA sequences and DNase-seq).
 
+### Trained models
 You can download our pre-training model from Google Drive
 ```
 pip install gdown
@@ -37,4 +38,5 @@ pip install gdown
 
 For the trained downstream models and data used in downstream tasks, you can go to each correspoding directories [GEP/](https://github.com/zzh24zzh/EPCOT/tree/master/gex), [COP/](https://github.com/zzh24zzh/EPCOT/tree/master/chrom_organization), and .
 
-We also prepare a Google Colab Notebook [EPCOT_usage.ipynb](https://github.com/zzh24zzh/EPCOT/blob/master/EPCOT_usage.ipynb) to introduce how to use EPCOT to predict multiple modalities and train logistic regression model using the predicted values of epigenomic features from the pre-training model
+### Tutorial
+We prepare a Google Colab Notebook [EPCOT_usage.ipynb](https://github.com/zzh24zzh/EPCOT/blob/master/EPCOT_usage.ipynb) to introduce how to use EPCOT to predict multiple modalities and train logistic regression model using the predicted values of epigenomic features from the pre-training model
