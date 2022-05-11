@@ -39,4 +39,7 @@ pip install gdown
 For the trained downstream models and data used in downstream tasks, you can go to each correspoding directories [GEP/](https://github.com/zzh24zzh/EPCOT/tree/master/gex), [COP/](https://github.com/zzh24zzh/EPCOT/tree/master/chrom_organization), and .
 
 ### Tutorial
-We prepare a Google Colab Notebook [EPCOT_usage.ipynb](https://github.com/zzh24zzh/EPCOT/blob/master/EPCOT_usage.ipynb) to introduce how to use EPCOT to predict multiple modalities and train logistic regression model using the predicted values of epigenomic features from the pre-training model
+We prepare a Google Colab Notebook [EPCOT_usage.ipynb](https://github.com/zzh24zzh/EPCOT/blob/master/EPCOT_usage.ipynb) to introduce how to use EPCOT to predict multiple modalities and train logistic regression model using the predicted values of epigenomic features from the pre-training model.
+
+### Documents
+We summarize the sequence patterns of 216 TFs, along with their motif comparision results and STRING scores of the interactions with TFs whose motifs are matched, in an xlsx file
